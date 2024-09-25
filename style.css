@@ -1,68 +1,82 @@
 * {
-    box-sizing: border-box;
-    font-family: "Comic Sans MS", "Comic Sans", cursive;
-  }
-  body {
-    margin: 0;
-    background-color: #f0f0f0;
-  }
-  header,
-  footer {
-    height: 44px;
-    background-color: #7f7f7f;
-    padding-inline: 40px;
-  }
-  header {
-    display: flex;
-    justify-content: space-between;
-  }
+  box-sizing: border-box;
+  font-family: "Comic Sans MS", "Comic Sans", cursive;
+}
+body {
+  margin: 0;
+  background-color: #f0f0f0;
+}
+header,
+footer {
+  height: 44px;
+  background-color: #7f7f7f;
+  padding-inline: 40px;
+}
+header {
+  display: flex;
+  justify-content: space-between;
+  color: white;
+}
 
-  header * {
-    color: white;
-  }
-  .content {
-    max-width: 960px;
-    margin-inline: auto;
-    padding-block: 20px;
-  }
-  .logo {
-    height: 100%;
-    display: flex;
-    align-items: center;
-    gap: 15px;
-  }
-  .logo img {
-    height: 100%;
-    border-radius: 50%;
-  }
-  .menu {
-    display: flex;
-    justify-self: end;
-    max-width: 960px;
-  }
-  .menu ul {
-    display: flex;
-    list-style: none;
-    margin: 0;
-    padding: 0;
-  }
-  .menu ul li a {
-    display: flex;
-    align-items: center;
-    text-decoration: none;
-    padding-inline: 20px;
-    height: 100%;
-  }
-  .t1 td, .t1 th {
-    width: 40px;
-    border: 1px black solid;
-    text-align: center;
-  }
-  .t1 tr:nth-child(2n) {
-    background-color: bisque;
-  }
-  footer {
-    display: flex;
-    align-items: center;
-    color: white;
-  }
+header * {
+  color: white;
+}
+
+.name {
+  justify-self: center;
+  align-self: center;
+  font-size: 25px;
+}
+
+.main {
+  display: flex;
+  justify-content: center;
+}
+
+.content {
+  max-width: 960px;
+  margin-inline: auto;
+  padding-block: 20px;
+}
+.logo {
+  height: 100%;
+  display: flex;
+  align-items: center;
+  gap: 15px;
+}
+.logo img {
+  height: 100%;
+  border-radius: 50%;
+}
+.menu {
+  display: flex;
+  justify-self: end;
+  max-width: 960px;
+}
+.menu ul {
+  display: flex;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+.menu ul li a {
+  display: flex;
+  align-items: center;
+  text-decoration: none;
+  padding-inline: 20px;
+  height: 100%;
+}
+.t1 td,
+.t1 th {
+  width: 40px;
+  border: 1px black solid;
+  text-align: center;
+}
+.t1 tr:nth-child(2n) {
+  background-color: bisque;
+}
+footer {
+  display: flex;
+  align-items: center;
+  color: white;
+}
