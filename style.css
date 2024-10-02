@@ -52,10 +52,14 @@ header * {
   justify-content: space-between;
   gap: 15px;
 }
-.logo img {
-  height: 50px;
+.logo a {
+  height: 100%;
+}
+
+.logo a img {
   border-radius: 50%;
 }
+
 .menu {
   display: flex;
   justify-self: end;
