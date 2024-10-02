@@ -25,7 +25,6 @@ header * {
   align-self: center;
 }
 
-
 .table {
   order: -1;
 }
@@ -52,11 +51,9 @@ header * {
   justify-content: space-between;
   gap: 15px;
 }
-.logo a {
-  height: 100%;
-}
 
-.logo a img {
+.logo img {
+  height: 50px;
   border-radius: 50%;
 }
 
