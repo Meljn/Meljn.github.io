@@ -3,220 +3,238 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="style.css" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH"
+      crossorigin="anonymous"
+    />
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+      crossorigin="anonymous"
+    ></script>
     <title>Document</title>
   </head>
   <body>
-    <header>
-      <div class="logo">
-        <img src="https://img.freepik.com/free-vector/bird-colorful-logo-gradient-vector_343694-1365.jpg?size=338&ext=jpg&ga=GA1.1.2008272138.1726790400&semt=ais_hybrid" alt="Logo" />
-        <div class="name">Meljn-компани</div>
+    <header
+      class="d-flex flex-column flex-md-row gap-3 gap-md-0 h-md-44px justify-content-md-between px-5 py-3 py-md-0"
+    >
+      <div
+        class="logo d-flex align-items-center justify-content-between min-w-50 gap-3"
+      >
+        <img
+          src="https://img.freepik.com/free-vector/bird-colorful-logo-gradient-vector_343694-1365.jpg?size=338&ext=jpg&ga=GA1.1.2008272138.1726790400&semt=ais_hybrid"
+          alt="Logo"
+          class="rounded-circle"
+        />
+        <div class="text-white fs-6">Meljn-компани</div>
       </div>
-      <nav class="menu">
-        <ul>
-          <li><a href="">Сcылка 1</a></li>
-          <li><a href="">Сcылка 2</a></li>
-          <li><a href="">Сcылка 3</a></li>
+      <nav class="d-flex justify-self-end mw-960px menu">
+        <ul class="d-flex flex-column flex-md-row list-unstyled m-0 w-100">
+          <li>
+            <a
+              href=""
+              class="d-flex align-items-center px-4 h-40px h-md-100 text-decoration-none text-nowrap text-white"
+              >Сcылка 1</a
+            >
+          </li>
+          <li>
+            <a
+              href=""
+              class="d-flex align-items-center px-4 h-40px h-md-100 text-decoration-none text-nowrap text-white"
+              >Сcылка 2</a
+            >
+          </li>
+          <li>
+            <a
+              href=""
+              class="d-flex align-items-center px-4 h-40px h-md-100 text-decoration-none text-nowrap text-white"
+              >Сcылка 3</a
+            >
+          </li>
         </ul>
       </nav>
     </header>
-    <section class="main">
-      <div class="content">
-        <div class="hyper-list">
-          <h1>Список гиперссылок</h1>
-          <ul>
-            <li><a href="http://kubsu.ru">Главная страница kubsu.ru</a></li>
-            <li>
-              <a href="https://kubsu.ru">Главная страница kubsu.ru (HTTPS)</a>
-            </li>
-            <li>
-              <a href="https://kubsu.ru/"
-                ><img src="image.jpg" alt="" width="50px" height="50px"
-              /></a>
-            </li>
-            <li>
-              <a href="/internal-page"
-                >Сокращенная ссылка на внутреннюю страницу</a
-              >
-            </li>
-            <li><a href="/">Сокращенная ссылка на главную страницу</a></li>
-            <li><a href="#section">Ссылка на фрагмент текущей страницы</a></li>
-            <li>
-              <a href="http://example.com/page?page=1&perpage=2&limit=10"
-                >Ссылка с тремя параметрами в URL</a
-              >
-            </li>
-            <li>
-              <a href="http://example.com/page?id=123"
-                >Ссылка с параметром id в URL</a
-              >
-            </li>
-            <li>
-              <a href="current-page.html"
-                >Относительная ссылка на страницу в текущем каталоге</a
-              >
-            </li>
-            <li>
-              <a href="about/page.html"
-                >Относительная ссылка на страницу в каталоге about</a
-              >
-            </li>
-            <li>
-              <a href="../page.html"
-                >Относительная ссылка на страницу в каталоге уровнем выше</a
-              >
-            </li>
-            <li>
-              <a href="../../page.html"
-                >Относительная ссылка на страницу в каталоге двумя уровнями
-                выше</a
-              >
-            </li>
-            <li>
-              <p>
-                Контекстная ссылка:
-                <a href="http://example.com">перейти на сайт example.com</a>.
-              </p>
-            </li>
-            <li>
-              <a href="https://example.com#section"
-                >Ссылка на фрагмент страницы стороннего сайта</a
-              >
-            </li>
-            <li>
-              <img src="image.jpg" alt="" width="200" usemap="#image-map" />
-              <map name="image-map">
-                <area
-                  shape="rect"
-                  coords="10,10, 50,50"
-                  href="http://example1.com"
-                  alt=""
-                />
-                <area
-                  shape="circle"
-                  coords="100,50,20"
-                  href="http://example2.com"
-                  alt=""
-                />
-              </map>
-            </li>
-            <li><a href="#">Ссылка с пустым href</a></li>
-            <li><a>Ссылка без href</a></li>
-            <li>
-              <a href="https://example.com" rel="nofollow"
-                >Ссылка, по которой запрещен переход поисковикам</a
-              >
-            </li>
-            <li>
-              <a href="http://example.com" rel="noindex"
-                >Запрещенная для индексации поисковиками</a
-              >
-            </li>
-            <li>
-              <ol>
-                <li>
-                  <a href="http://example.com/page1" title="Первая страница"
-                    >Первая страница</a
-                  >
-                </li>
-                <li>
-                  <a href="http://example.com/page2" title="Вторая страница"
-                    >Вторая страница</a
-                  >
-                </li>
-                <li>
-                  <a href="http://example.com/page3" title="Третья страница"
-                    >Третья страница</a
-                  >
-                </li>
-              </ol>
-            </li>
-          </ul>
+    <main class="d-flex flex-column w-100 mx-auto p-4 mw-md-960px content">
+      <section class="hyper-list">
+        <h1>Список гиперссылок</h1>
+        <ul>
+          <li><a href="http://kubsu.ru">Главная страница kubsu.ru</a></li>
+          <li>
+            <a href="https://kubsu.ru">Главная страница kubsu.ru (HTTPS)</a>
+          </li>
+          <li>
+            <a href="https://kubsu.ru/"
+              ><img src="image.jpg" alt="" width="50" height="50"
+            /></a>
+          </li>
+          <li>
+            <a href="/internal-page"
+              >Сокращенная ссылка на внутреннюю страницу</a
+            >
+          </li>
+          <li><a href="/">Сокращенная ссылка на главную страницу</a></li>
+          <li><a href="#section">Ссылка на фрагмент текущей страницы</a></li>
+          <li>
+            <a href="http://example.com/page?page=1&perpage=2&limit=10"
+              >Ссылка с тремя параметрами в URL</a
+            >
+          </li>
+          <li>
+            <a href="http://example.com/page?id=123"
+              >Ссылка с параметром id в URL</a
+            >
+          </li>
+          <li>
+            <a href="current-page.html"
+              >Относительная ссылка на страницу в текущем каталоге</a
+            >
+          </li>
+          <li>
+            <a href="about/page.html"
+              >Относительная ссылка на страницу в каталоге about</a
+            >
+          </li>
+          <li>
+            <a href="../page.html"
+              >Относительная ссылка на страницу в каталоге уровнем выше</a
+            >
+          </li>
+          <li>
+            <a href="../../page.html"
+              >Относительная ссылка на страницу в каталоге двумя уровнями
+              выше</a
+            >
+          </li>
+          <li>
+            <p>
+              Контекстная ссылка:
+              <a href="http://example.com">перейти на сайт example.com</a>.
+            </p>
+          </li>
+          <li>
+            <a href="https://example.com#section"
+              >Ссылка на фрагмент страницы стороннего сайта</a
+            >
+          </li>
+          <li><a href="#">Ссылка с пустым href</a></li>
+          <li><a>Ссылка без href</a></li>
+          <li>
+            <a href="https://example.com" rel="nofollow"
+              >Ссылка, по которой запрещен переход поисковикам</a
+            >
+          </li>
+          <li>
+            <a href="http://example.com" rel="noindex"
+              >Запрещенная для индексации поисковиками</a
+            >
+          </li>
+          <li>
+            <ol>
+              <li>
+                <a href="http://example.com/page1" title="Первая страница"
+                  >Первая страница</a
+                >
+              </li>
+              <li>
+                <a href="http://example.com/page2" title="Вторая страница"
+                  >Вторая страница</a
+                >
+              </li>
+              <li>
+                <a href="http://example.com/page3" title="Третья страница"
+                  >Третья страница</a
+                >
+              </li>
+            </ol>
+          </li>
+        </ul>
+        <ul>
           <li>
             <a href="ftp://username:password@example.com/file.txt"
               >Сcылка на файл на сервере FTP с авторизацией</a
             >
           </li>
-        </div>
+        </ul>
+      </section>
 
-        <div class="table">
-          <h1>Таблица</h1>
-          <table class="t1">
-            <tr>
-              <th colspan="2">1</th>
-              <th colspan="2">2</th>
-            </tr>
-            <tr>
-              <td rowspan="2">5</td>
-              <td>6</td>
-              <td>7</td>
-              <td>8</td>
-            </tr>
-            <tr>
-              <td>10</td>
-              <td>11</td>
-              <td>12</td>
-            </tr>
-            <tr>
-              <td>13</td>
-              <td>14</td>
-              <td>15</td>
-              <td>16</td>
-            </tr>
-            <tr>
-              <td>17</td>
-              <td>18</td>
-              <td>19</td>
-              <td>20</td>
-            </tr>
-            <tr>
-              <td>21</td>
-              <td>22</td>
-              <td>23</td>
-              <td>24</td>
-            </tr>
-          </table>
-        </div>
-
-        <div class="forma">
-          <h1>Форма</h1>
-          <form action="">
-            <label for="fio"
-              >ФИО <br />
-              <input type="text" id="fio" name="fio" required/>
-            </label>
-            <br />
-            <label for="phone"
-              >Номер телефона <br />
-              <input type="tel" id="tel" name="tel" required/>
-            </label>
-            <br />
-            <label for="email"
-              >Адрес электронной почты <br />
-              <input type="email" id="email" name="email" required/>
-            </label>
-            <br />
-            <label for="date"
-              >Дата рождения <br />
-              <input type="date" id="date" name="date" required/>
-            </label>
-            <br />
-            Ваш пол
-            <br />
-            <label>
-              <input
-                type="radio"
-                checked="checket"
-                name="radio"
-                value="Значение1"
-              />
-              М
-            </label>
-            <label>
-              <input type="radio" name="radio" value="Значение2" />
-              Ж
-            </label>
-            <br />
+      <section class="order-first order-md-0">
+        <h1>Таблица</h1>
+        <table class="t1 border-uncollapse">
+          <tr>
+            <th colspan="2">1</th>
+            <th colspan="2">2</th>
+          </tr>
+          <tr>
+            <td rowspan="2">5</td>
+            <td>6</td>
+            <td>7</td>
+            <td>8</td>
+          </tr>
+          <tr>
+            <td>10</td>
+            <td>11</td>
+            <td>12</td>
+          </tr>
+          <tr>
+            <td>13</td>
+            <td>14</td>
+            <td>15</td>
+            <td>16</td>
+          </tr>
+          <tr>
+            <td>17</td>
+            <td>18</td>
+            <td>19</td>
+            <td>20</td>
+          </tr>
+          <tr>
+            <td>21</td>
+            <td>22</td>
+            <td>23</td>
+            <td>24</td>
+          </tr>
+        </table>
+      </section>
+      <br>
+      <section class="forma">
+        <h1>Форма</h1>
+        <form action="#">
+          <label for="fio"
+            >ФИО <br />
+            <input type="text" id="fio" name="fio" />
+          </label>
+          <br />
+          <label for="tel"
+            >Номер телефона <br />
+            <input type="tel" id="tel" name="tel" />
+          </label>
+          <br />
+          <label for="email"
+            >Адрес электронной почты <br />
+            <input type="email" id="email" name="email" />
+          </label>
+          <br />
+          <label for="date"
+            >Дата рождения <br />
+            <input type="date" id="date" name="date" />
+          </label>
+          <br />
+          Ваш пол
+          <br />
+          <label>
+            <input
+              type="radio"
+              checked="checked"
+              name="radio"
+              value="Значение1"
+            />
+            М
+          </label>
+          <label>
+            <input type="radio" name="radio" value="Значение2" />
+            Ж
             <label for="select"> Любимый язык программирования </label>
             <br />
             <select
@@ -238,23 +256,102 @@
               <option value="Prolog">Prolog</option>
               <option value="Scala">Scala</option>
             </select>
+            Ваша биография
             <br />
-            <label>
-              Ваша биография
-              <br />
-              <textarea name="biography"></textarea>
-            </label>
-            <br />
-            <label>
-              С контрактом ознакомлен(а)
-              <input type="checkbox" name="checkbox" value="yes" />
-            </label>
-            <br />
-            <input type="submit" value="Сохранить" />
-          </form>
-        </div>
-      </div>
-    </section>
-    <footer>© Мельников Илья</footer>
+            <textarea name="biography"></textarea>
+          </label>
+          <br />
+          <label>
+            С контрактом ознакомлен(а)
+            <input type="checkbox" name="checkbox" value="yes" />
+          </label>
+          <br />
+          <input type="submit" value="Сохранить" />
+        </form>
+      </section>
+    </main>
+    <footer class="d-flex align-items-center text-white px-5 py-3">
+      © Мельников Илья
+    </footer>
   </body>
 </html>
+
+<style>
+  *,
+  *::before,
+  *::after {
+    box-sizing: border-box;
+  }
+  html,
+  body {
+    font-family: "Comic Sans MS", "Comic Sans", cursive;
+  }
+  body {
+    background-color: #f0f0f0;
+  }
+
+  h1 {
+    font-size: 24px;
+    font-weight: bold;
+  }
+
+  header {
+    background-color: #7f7f7f;
+  }
+
+  header * {
+    color: white;
+  }
+
+  .content {
+    background-color: #f6f6f6;
+  }
+  .logo img {
+    height: 50px;
+  }
+
+  .border-uncollapse {
+    border-collapse: initial;
+  }
+
+  .min-w-50 {
+    min-width: 50%;
+  }
+
+  .h-40px {
+    height: 40px;
+  }
+  .mw-960px {
+    max-width: 960px;
+  }
+  .menu ul li a {
+    background-color: #8f8f8f;
+  }
+  .t1 td,
+  .t1 th {
+    width: 40px;
+    border: 1px black solid;
+    text-align: center;
+  }
+  .t1 tr:nth-child(2n) {
+    background-color: bisque;
+  }
+  footer {
+    background: #7f7f7f;
+  }
+
+  @media screen and (min-width: 768px) {
+    .mw-md-960px {
+      max-width: 960px;
+    }
+    .h-md-100 {
+      height: 100%;
+    }
+    .h-md-44px {
+      height: 44px;
+    }
+    .logo img {
+      height: 100%;
+    }
+  }
+</style>
