@@ -1,20 +1,24 @@
-* {
+*,
+*::before,
+*::after {
   box-sizing: border-box;
+}
+
+html,
+body {
   font-family: "Comic Sans MS", "Comic Sans", cursive;
 }
+
 body {
-  margin: 0;
   background-color: #f0f0f0;
 }
 
+h1 {
+  font-size: 24px;
+  font-weight: bold;
+}
+
 header {
-  width: 100%;
-  display: flex;
-  flex-direction: column;
-  justify-content: start;
-  height: auto;
-  padding: 15px 40px;
-  gap: 15px;
   background-color: #7f7f7f;
 }
 
@@ -22,64 +26,29 @@ header * {
   color: white;
 }
 
-.name {
-  align-self: center;
-}
-
-.table {
-  order: -1;
-}
-
-.main {
-  display: flex;
-  justify-content: center;
-}
-
 .content {
-  display: flex;
-  flex-direction: column;
-  width: 100%;
-  margin-inline: auto;
-  padding-block: 20px;
   background-color: #f6f6f6;
-  padding-inline: 10px;
 }
-.logo {
-  min-width: 50%;
-  height: 100%;
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  gap: 15px;
-}
-
 .logo img {
   height: 50px;
-  border-radius: 50%;
 }
 
-.menu {
-  display: flex;
-  justify-self: end;
+.border-uncollapse {
+  border-collapse: initial;
+}
+
+.min-w-50 {
+  min-width: 50%;
+}
+
+.h-40px {
+  height: 40px;
+}
+.mw-960px {
   max-width: 960px;
 }
-.menu ul {
-  flex-direction: column;
-  width: 100%;
-
-  display: flex;
-  list-style: none;
-  margin: 0;
-  padding: 0;
-}
 .menu ul li a {
-  height: 40px;
   background-color: #8f8f8f;
-
-  display: flex;
-  align-items: center;
-  text-decoration: none;
-  padding-inline: 20px;
 }
 .t1 td,
 .t1 th {
@@ -91,35 +60,20 @@ header * {
   background-color: bisque;
 }
 footer {
-  width: 100%;
-  display: flex;
-  align-items: center;
-  color: white;
   background: #7f7f7f;
-  padding: 15px 40px;
 }
 
 @media screen and (min-width: 768px) {
-  .table {
-    order: 0;
-  }
-  .content {
+  .mw-md-960px {
     max-width: 960px;
   }
-  header {
-    display: flex;
-    justify-content: space-between;
-    padding-block: 0;
-    height: 44px;
-    flex-direction: row;
-  }
-  .logo img {
+  .h-md-100 {
     height: 100%;
   }
-  .menu ul {
-    flex-direction: row;
+  .h-md-44px {
+    height: 44px;
   }
-  .menu ul li a {
+  .logo img {
     height: 100%;
   }
 }

@@ -9,6 +9,7 @@
       integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH"
       crossorigin="anonymous"
     />
+    <link rel="stylesheet" href="style.css" />
     <script
       src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
       integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
@@ -197,7 +198,7 @@
           </tr>
         </table>
       </section>
-      <br>
+      <br />
       <section class="forma">
         <h1>Форма</h1>
         <form action="#">
@@ -235,6 +236,8 @@
           <label>
             <input type="radio" name="radio" value="Значение2" />
             Ж
+          </label>
+          <br />
             <label for="select"> Любимый язык программирования </label>
             <br />
             <select
@@ -256,6 +259,7 @@
               <option value="Prolog">Prolog</option>
               <option value="Scala">Scala</option>
             </select>
+            <br />
             Ваша биография
             <br />
             <textarea name="biography"></textarea>
@@ -275,83 +279,3 @@
     </footer>
   </body>
 </html>
-
-<style>
-  *,
-  *::before,
-  *::after {
-    box-sizing: border-box;
-  }
-  html,
-  body {
-    font-family: "Comic Sans MS", "Comic Sans", cursive;
-  }
-  body {
-    background-color: #f0f0f0;
-  }
-
-  h1 {
-    font-size: 24px;
-    font-weight: bold;
-  }
-
-  header {
-    background-color: #7f7f7f;
-  }
-
-  header * {
-    color: white;
-  }
-
-  .content {
-    background-color: #f6f6f6;
-  }
-  .logo img {
-    height: 50px;
-  }
-
-  .border-uncollapse {
-    border-collapse: initial;
-  }
-
-  .min-w-50 {
-    min-width: 50%;
-  }
-
-  .h-40px {
-    height: 40px;
-  }
-  .mw-960px {
-    max-width: 960px;
-  }
-  .menu ul li a {
-    background-color: #8f8f8f;
-  }
-  .t1 td,
-  .t1 th {
-    width: 40px;
-    border: 1px black solid;
-    text-align: center;
-  }
-  .t1 tr:nth-child(2n) {
-    background-color: bisque;
-  }
-  footer {
-    background: #7f7f7f;
-  }
-
-  @media screen and (min-width: 768px) {
-    .mw-md-960px {
-      max-width: 960px;
-    }
-    .h-md-100 {
-      height: 100%;
-    }
-    .h-md-44px {
-      height: 44px;
-    }
-    .logo img {
-      height: 100%;
-    }
-  }
-</style>
