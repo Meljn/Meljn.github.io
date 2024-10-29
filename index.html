@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Калькулятор стоимости услуги</title>
+    <link rel="stylesheet" href="style.css" />
+    <script defer src="script.js"></script>
+  </head>
+  <body>
+    <h1>Калькулятор стоимости услуги</h1>
+    <form id="serviceForm">
+      <div>
+        <label for="quantity">Количество:</label>
+        <input type="text" id="quantity" placeholder="Введите количество" />
+      </div>
+
+      <div>
+        <label>Тип услуги:</label>
+        <div class="uslugi">
+          <div>
+            <input
+              type="radio"
+              id="type1"
+              name="serviceType"
+              value="type1"
+              checked
+            />
+            <label for="type1">Услуга - 10 руб.</label>
+          </div>
+          <div>
+            <input type="radio" id="type2" name="serviceType" value="type2" />
+            <label for="type2">Услуга - 20 + x руб.</label>
+          </div>
+          <div>
+            <input type="radio" id="type3" name="serviceType" value="type3" />
+            <label for="type3">Услуга - 30 руб.</label>
+          </div>
+        </div>
+      </div>
+
+      <div id="optionsContainer" style="display: none">
+        <label for="optionSelect">Выберите опцию:</label>
+        <select id="optionSelect">
+          <option value="5">Опция 1 - 5 руб.</option>
+          <option value="10">Опция 2 - 10 руб.</option>
+          <option value="15">Опция 3 - 15 руб.</option>
+        </select>
+      </div>
+
+      <div id="propertyContainer" style="display: none">
+        <label>
+          <input type="checkbox" id="propertyCheckbox" />
+          Продвинутая услуга (+15руб.)
+        </label>
+      </div>
+
+      <button type="button" id="calculateBtn">Подсчитать стоимость</button>
+    </form>
+
+    <div id="result" style="display: none"></div>
+  </body>
+</html>
