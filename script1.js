@@ -1,6 +1,5 @@
 jQuery(document).ready(function($) {
     $(document).ready(function() {
-    // Инициализация слайдера
         $('.slider').slick({
             dots: true,
             infinite: true,
@@ -17,7 +16,6 @@ jQuery(document).ready(function($) {
             ]
         });
 
-        // Перелистывание слайдов
         $('#prev-slide').on('click', function() {
             $('.slider').slick('slickPrev'); 
         });
